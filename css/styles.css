@@ -1,0 +1,412 @@
+/* @media(min-width: 375px){ 
+    .header{
+        height: 100px;
+        width: 1000px;
+        background-color: black;
+    }
+    .nav{
+        display: flex;
+        
+
+    }
+    .header-logo{
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 50px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .header-listaenlaces{
+        height: 35px;
+        width: 260px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+
+        position: relative;
+        top: 30px;
+        right: 40px;
+    }
+    .header-enlaces{
+        color: white;
+        border: 1px solid white;
+        margin: 1px;
+        padding: 2px;
+        align-content: center;
+
+    }
+    .header-busqueda{
+        display: none;
+        /* width: 50px ; 
+        height: auto;
+        color: white;
+        gap: 10px;
+
+        margin: 10px;
+        padding: 20px;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        position: relative;
+        right: 70px;
+         top: 15px; 
+    }
+    nav form label{
+        display: none;
+    }
+
+    .header-contenedor{
+        
+        
+    }
+    .header-contenedorcuenta{
+        color: transparent;
+        
+        position: relative;
+        top: 30px;
+        right: 50px;
+        
+        
+    }
+    .header-cuentaenlace{
+        color: white;
+        text-align: center;
+        margin: 1px;
+        border: 1px solid white;
+        padding: 2px;
+    
+    }
+/* SECCION PRINCIPAL CON 
+    .contenedor-video{
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .video{
+        width: 100%;
+        
+    }
+    .contenedor-articulo{
+        position: relative;
+        top: 60px;
+        right: 30px;
+        
+    }
+    .articulo{
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+
+        width: 180px;
+        height: 100px;
+
+        display: flex;
+        text-align: start;
+        flex-flow: column nowrap;
+        position: relative;
+        right: 370px;
+        top: 50px;
+    }
+
+    .articulo-h2{
+        text-align: center;
+        position: relative;
+        bottom: 18px;
+
+    }
+    .articulo-p{
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+
+    }
+    .articulo-boton{
+        text-align: center;
+        position: relative;
+        bottom: 60px;
+
+    }
+
+ }  
+
+/*  */
+
+@media(min-width: 375px){
+    .html{
+        background-color: black;
+    }
+    .header{  
+        width: 100vw;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black
+    }
+
+    .nav{ 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+
+    } 
+
+    .h1{
+        width: 15%;
+        padding: 0;
+        margin: 0;
+    
+    }
+    
+    .h1 img{
+        max-width: 100%;
+        max-height: 100%;
+        
+        
+    }
+    .lista-enlaces{
+        display: block;
+        color: white;
+        
+       
+        
+        
+    }
+    .lista{
+        width: 85%;
+        padding: 0;
+        margin: 0;
+        color: transparent;
+        
+        display: flex;
+        justify-content: space-around;
+        
+        
+    }
+    .lista li{
+        margin-right: 5px;
+        width: 80px;
+        
+        
+
+    }
+
+    .lista-formulario{
+        color: white;
+        padding: 0;
+        margin: 0;
+       
+    }
+    .lista-formulario input{
+        display: none;
+    }
+
+    .lista-formulario label{
+        display: inline;
+        
+    }
+    .lista-formulario button{
+        display: none;
+    }
+/* EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN   */
+
+    .main{
+        width: 100vw;
+        background-color: black;
+
+    }
+    .contenedor-videoprincipal{
+        max-width: 100%;
+        max-height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Alinear el contenido al final del contenedor */
+        align-items: flex-start; /* Alinear el contenido a la izquierda del contenedor */
+        
+        position: relative;
+        
+    }
+    .contenedor-videoprincipal video{
+        max-width: 100%;
+
+        
+    }
+
+    .contenedor-articuloprincipal{
+        color: white;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+
+        position: absolute;
+        
+        
+        
+    }
+    .articuloprincipal{
+        
+        
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        }
+
+
+    .seccion-eventos{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .seccion-eventos h2{
+        max-width: 100%;
+        padding: 1%;
+        margin: 1%;
+       
+    
+        color: white;
+
+        
+
+    }
+    
+    .seccion-eventos div{
+        max-width: 100%;
+        max-height: 100%;
+
+        margin-right: 4%;
+        padding: 2%;
+        gap: 10px;
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+
+    }
+    .seccion-articulos{
+        color: white;
+
+        max-width: 100%;
+    }
+    .seccion-articulos article {
+        max-width: 100% ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+/*                      SECCION TIENDA */
+
+    .seccion-tienda{
+        max-width: 100%;
+        color: white;
+        padding: 2%;
+        margin: 1%;
+
+        
+    }
+    .tienda-titulo{
+        margin: 1%;
+        margin-right: 20%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contenedor-articulotienda{
+        
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .contenedor-articulotienda a {
+        text-decoration: none;
+        color: white;
+
+    }
+   /*                  SECCION SETS */
+    .seccion-sets{  
+        max-width: 100%;
+
+        
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contenedor-titulosets{
+        color: white;
+        margin-right: 22%;
+        margin-left: 4%;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .contenedor-articulos{
+        color: white;
+        
+        margin: 1%;
+        padding: 3%;
+        gap: 10px;
+
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+
+    /*                  FOOOTER */
+    .footer{
+        background-color: grey;
+    }
+    .contenedor-titulo{
+        background-color: aliceblue;
+    }
+    .contenedor-titulo form{
+        margin-right: 10%;
+        padding: 3%;
+        
+    }
+    .contenedor-titulo h2{
+        margin-right: 10%;
+        padding: 4%;
+
+    }
+
+    .contenedor-enlaces{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+    }
+    .contenedor-enlaces article a{
+        text-decoration: none;
+        color: black;
+
+    }
+   
+    
+
+
+
+}

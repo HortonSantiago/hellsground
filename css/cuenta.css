@@ -1,0 +1,85 @@
+*{
+    margin: 0% auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100vw;
+    
+
+}
+
+.header {
+    max-width: 100%;
+    min-height: 10%;
+
+    
+  }
+  
+  .header-contenedor {
+    display: grid;
+    grid-template-columns: auto 1fr; /* El primer elemento se ajustará automáticamente al contenido, el segundo ocupará el espacio restante */
+    align-items: center; /* Centrar verticalmente el contenido */
+    background-color: black; /* Solo para visualizar el área ocupada por el header */
+}
+  
+  .h1 {
+    display: flex;
+    padding: 1%;
+  }
+  
+  ul {
+    list-style: none;
+    margin-right: 10px;
+    
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+  }
+  
+  ul li {
+    margin-left: 10px; /* Espacio entre los elementos del menú */
+  }
+  
+  .formulario {
+    display: flex;
+    align-items: center;
+  }
+  .formulario input{
+    display: none;
+  }
+  .formulario label{
+    color: white;
+    font-weight: bold;
+  }
+  .formulario button{
+    display: none;
+  }
+  
+  /* Estilos adicionales para visualización */
+  ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  
+ 
+  button {
+    margin-left: 5px;
+  }
+  img{
+    width: 100%;
+  }
+
+
+  /* 
+                                DISEÑOOOOOOO DEL BODY*/
+  .main{
+    margin: 10px;
+    padding: 100px;
+
+    display: flex;
+    flex-flow: column;
+    background-image: url(../img/foto1.JPG);
+    
+  }
