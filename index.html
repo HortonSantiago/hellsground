@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <title>Hellsground</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <h1  class="h1"><img src="/img/logo1.JPG" alt="logo" class="h1-logo"></h1>
+                <ul class="lista">
+                    <li><a href="1" class="lista-enlaces">Eventos</a></li>
+                    <li><a href="1" class="lista-enlaces">Videos</a></li>
+                    <li><a href="1" class="lista-enlaces">Imagenes</a></li>
+                    <li><a href="1" class="lista-enlaces">Tienda</a></li>
+                    <li><a href="./pages/cuenta.html" class="lista-enlaces">Cuenta</a></li>
+                    <li><a href="" class="lista-enlaces">
+                            <form action="" method="get" class="lista-formulario">
+                                <label for="busqueda" >Buscar: </label>
+                                <input type="text" name="busqueda-general" id="busqueda-general" placeholder="Buscar">
+                                <button type="submit">Ir</button>
+                            </form>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="contenedor-videoprincipal">
+                <video src="./img/movie finall.mp4"  muted autoplay loop poster="./img/foto1.JPG" ></video>
+                <div class="contenedor-articuloprincipal">
+                    <article class="articuloprincipal">
+                        <h2>Evento 01</h2>
+                        <p>Live desde Buenos Aires, Argentina.</p>
+                        <a href="pagina del evento con info detallada " target="_blank"><button type="submit">mas info</button></a>
+                    </article>
+                </div>
+            </section>
+            <section class="seccion-eventos">
+                <div>
+                    <h2>Proximos Eventos</h2>
+                    <a href="./pages/eventos.html"><button type="button"> Ver Todos</button></a>
+                </div>
+                    <div class="seccion-articulos">
+                        <article>
+                            <img src="./img/flyer1.JPG" alt="flyer proximo evento 02" width="270" height="270">
+                            <button type="button"> falta 1 dia</button>
+                            <h3> Hellsground Halloween edition </h3>
+                            <p> Buenos aires | 30 de octubre | 23hs a 7hs (UTC-3) </p>
+                        </article>
+                        <article>
+                            <img src="./img/flyer2.png" alt="flyer proximo evento 03" width="270" height="270">
+                            <button type="button"> faltan 30 dias</button>
+                            <h3> Hellsground x Moscu </h3>
+                            <p> Moscu terrace | 22 de abril | 23hs a 7hs (UTC-3) </p>
+                        </article>
+                        <article>
+                            <img src="./img/flyer3.png" alt="flyer proximo evento 04" width="270" height="270">
+                            <button type="button"> falta 15 dias</button>
+                            <h3> Hellsground Cheka & Friends Edition </h3>
+                            <p> Cheka, Zona oeste | 29 de abril | 23hs a 7hs (UTC-3) </p>
+                        </article>
+                        <article>
+                            <img src="./img/flyer4.png" alt="flyer proximo evento 05" width="270" height="270">
+                            <button type="button"> falta 60 dias</button>
+                            <h3> Hellsground Cheka & Club la Octava </h3>
+                            <p> Palermo, Buenos Aires | 16 de octubre | 23hs a 7hs (UTC-3) </p>
+                        </article>
+                    </div>
+            </section>
+            <section class="seccion-tienda">
+                <div class="tienda-titulo">
+                    <h2>Tienda</h2>
+                    <a href="./pages/tienda.html" target="_blank"><button type="button"> Ver Todos</button></a>
+                </div>
+<!-- estos enlaces deberian llevarme a la pagina del buzo directamente, no a la seccion tienda. -->
+                <div class="contenedor-articulotienda">
+                    <a href="./pages/tienda.html" target="_blank">
+                    <article>
+                        <img src="./img/tienda-buzo1.webp" alt="buzo azul" width="270" height="270">
+                        <h3>Buzo Hoodie Azul Oscuro</h3>
+                        <span class="precio"> 18000 ARS</span>
+                    </article>
+                    </a>
+    <!-- estos enlaces deberian llevarme a la pagina del buzo directamente, no a la seccion tienda. -->
+                    <a href="./pages/tienda.html" target="_blank">
+                    <article>
+                        <img src="./img/tienda-buzo2.webp" alt="buzo blanco y negro" width="270" height="270">
+                        <h3>Buzo Hoodie Black & White</h3>
+                        <span class="precio"> 22000 ARS</span>
+                    </article>
+                    </a>
+    <!-- estos enlaces deberian llevarme a la pagina de la remera directamente, no a la seccion tienda. -->
+                    <a href="./pages/tienda.html" target="_blank">
+                    <article>
+                        <img src="./img/tienda-buzo3.webp" alt="remera negra con texto verde" width="270" height="270">
+                        <h3>Remera Oversize Negra </h3>
+                        <span class="precio"> 22000 ARS</span>
+                    </article>
+                    </a>
+    <!-- estos enlaces deberian llevarme a la pagina de la remera directamente, no a la seccion tienda. -->
+                    <a href="./pages/tienda.html" target="_blank">
+                    <article>
+                        <img src="./img/tienda-buzo4.webp" alt="remera blanca con imagen" width="270" height="270">
+                        <h3>Remera Oversize Blanca  </h3>
+                        <span class="precio"> 19000 ARS</span>
+                    </article>
+                    </a>
+                </div>
+            </section>
+            <section class="seccion-sets">
+                <div class="contenedor-titulosets">
+                    <h2>Los Ultimos sets</h2>
+                    <a href="./pages/videos.html"><button type="button"> Ver Todos</button></a>
+                </div>
+                <div class="contenedor-articulos">
+                    <article>
+                        <a href="https://www.youtube.com/watch?v=5w7Lv4rVoLU&t=4432s&ab_channel=FR3ADY" target="_blank"><img src="./img/logo2.JPG" alt="set grabado para youtube" width="270" height="270"></a>
+                        <h3> Hellsground Radio edition 01  </h3>
+                        <p> Buenos aires | oct 2023 | 80 min</p>
+                    </article>
+                    <article>
+                        <a href="https://www.youtube.com/watch?v=Xvm_yUjvPR4&t=1288s&ab_channel=BeatsofNature" target="_blank"><img src="./img/foto6.JPG" alt="set grabado para youtube" width="270" height="270"></a>      
+                        <h3> Hellsground Radio edition 02 </h3>
+                        <p> Buenos aires, Mendoza | ene 2023 | 2 hrs</p>
+                    </article>
+                    <article>
+                        <a href="https://www.youtube.com/watch?v=cjY3bNy_G6k&t=1488s&ab_channel=BeatsofNature" target="_blank"><img src="./img/foto2.JPG" alt="set grabado para youtube" width="270" height="270"></a>
+                        <h3> Hellsground Radio edition 03 </h3>
+                        <p> Buenos aires, Cordoba | mar 2023 | 90 min </p>
+                    </article>
+                    <article>
+                        <a href="https://www.youtube.com/watch?v=-RQhqy6iOvc&t=1833s&ab_channel=Art%26Cellar" target="_blank"><img src="./img/foto1.JPG" alt="set grabado para youtube" width="270" height="270"></a>
+                        <h3> Hellsground Radio edition 04 </h3>
+                        <p> Buenos aires | abril 2023 | 60 min</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="contenedor-titulo">
+                <h2><small> SUSCRÍBETE A NUESTRA LISTA DE CORREO PARA OBTENER UN 15% DE DESCUENTO EN TU PRIMER PEDIDO EN LA TIENDA, MÁS NOTICIAS Y PRIMER ACCESO A EVENTOS</small></h2>
+                <form action="" method="get">
+                    <label for="mail">Ingresa tu mail: </label>
+                    <input type="text" id="mail" name="mail">
+                    <button type="submit"> SUSCRIBTE </button>
+                    <p><span style="color:black;">Puede cambiar de opinión en cualquier momento haciendo clic en el enlace para cancelar la suscripción
+                    en el pie de página de cualquier correo electrónico que reciba de nosotros, o comunicándose con nosotros en <a href="gmail.com" target="_blank">support@hellsground.tv</a>.
+                    Trataremos su información con respeto. Para obtener más información sobre nuestras prácticas de privacidad, lea la <a href="./pages/" target="_blank"> Política de privacidad</a> de HellsGround.
+                    Al hacer clic arriba, acepta que podemos procesar su información de acuerdo con estos términos.</span></p>
+                </form>
+            </div>
+            
+            <section class="contenedor-enlaces">
+                <article>
+                    <a href="./index.html" class="color"><h3>HellsGround</h3></a>
+                    <ul>
+                        <a href="" class="color"><li>Sobre nosotros</li></a>
+                        <a href="" class="color"><li>Facebook</li></a>
+                        <a href="" class="color"><li>Instagram</li></a>
+                        <a href="" class="color"><li>Twitter</li></a>
+                        <a href="" class="color"><li>Soundcloud</li></a>
+                        <a href="" class="color"><li>Youtube</li></a>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Informacion</h3>
+                    <ul>
+                        <a href=""><li>Apoyo</li></a>
+                        <a href=""><li>Accesibilidad</li></a>
+                        <a href=""><li>Terminos y condiciones de Compra</li></a>
+                        <a href=""><li>Politicas de Privacidad</li></a>
+                        <a href=""><li>Condiciones de uso del sitio web</li></a>
+                        <a href=""><li>Youtube</li></a>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+    </body>
+</html>
