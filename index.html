@@ -10,14 +10,14 @@
     <body>
         <header class="header">
             <nav class="nav">
-                <h1  class="h1"><img src="/img/logo1.JPG" alt="logo" class="h1-logo"></h1>
+                <h1  class="h1"><img src="./img/logo1.JPG" alt="logo" class="h1-logo"></h1>
                 <ul class="lista">
-                    <li><a href="1" class="lista-enlaces">Eventos</a></li>
-                    <li><a href="1" class="lista-enlaces">Videos</a></li>
-                    <li><a href="1" class="lista-enlaces">Imagenes</a></li>
-                    <li><a href="1" class="lista-enlaces">Tienda</a></li>
-                    <li><a href="./pages/cuenta.html" class="lista-enlaces">Cuenta</a></li>
-                    <li><a href="" class="lista-enlaces">
+                    <li><a href="1">EVENTOS</a></li>
+                    <li><a href="1">VIDEOS</a></li>
+                    <li><a href="1">IMAGENES</a></li>
+                    <li><a href="1">TIENDA</a></li>
+                    <li><a href="./pages/cuenta.html" >CUENTA</a></li>
+                    <li><a href="">
                             <form action="" method="get" class="lista-formulario">
                                 <label for="busqueda" >Buscar: </label>
                                 <input type="text" name="busqueda-general" id="busqueda-general" placeholder="Buscar">
@@ -31,41 +31,42 @@
         <main class="main">
             <section class="contenedor-videoprincipal">
                 <video src="./img/movie finall.mp4"  muted autoplay loop poster="./img/foto1.JPG" ></video>
-                <div class="contenedor-articuloprincipal">
-                    <article class="articuloprincipal">
+                
+                <article class="articuloprincipal">
+                    <div>
                         <h2>Evento 01</h2>
-                        <p>Live desde Buenos Aires, Argentina.</p>
-                        <a href="pagina del evento con info detallada " target="_blank"><button type="submit">mas info</button></a>
+                        <p>Live desde Buenos Aires, Argentina.</p></div>
+                        <a href="pagina del evento con info detallada " target="_blank"><p>MAS INFO</p></a>
+                    </div>
                     </article>
-                </div>
             </section>
             <section class="seccion-eventos">
-                <div>
+                <div class="eventos-titulo">
                     <h2>Proximos Eventos</h2>
-                    <a href="./pages/eventos.html"><button type="button"> Ver Todos</button></a>
+                    <a href="./pages/eventos.html"><p> Ver Todos</p></a>
                 </div>
                     <div class="seccion-articulos">
                         <article>
                             <img src="./img/flyer1.JPG" alt="flyer proximo evento 02" width="270" height="270">
-                            <button type="button"> falta 1 dia</button>
+                            <span> falta 1 dia</span>
                             <h3> Hellsground Halloween edition </h3>
                             <p> Buenos aires | 30 de octubre | 23hs a 7hs (UTC-3) </p>
                         </article>
                         <article>
                             <img src="./img/flyer2.png" alt="flyer proximo evento 03" width="270" height="270">
-                            <button type="button"> faltan 30 dias</button>
+                            <span> faltan 30 dias</span>
                             <h3> Hellsground x Moscu </h3>
                             <p> Moscu terrace | 22 de abril | 23hs a 7hs (UTC-3) </p>
                         </article>
                         <article>
                             <img src="./img/flyer3.png" alt="flyer proximo evento 04" width="270" height="270">
-                            <button type="button"> falta 15 dias</button>
+                            <span> falta 15 dias</span>
                             <h3> Hellsground Cheka & Friends Edition </h3>
                             <p> Cheka, Zona oeste | 29 de abril | 23hs a 7hs (UTC-3) </p>
                         </article>
                         <article>
                             <img src="./img/flyer4.png" alt="flyer proximo evento 05" width="270" height="270">
-                            <button type="button"> falta 60 dias</button>
+                            <span> falta 60 dias</span>
                             <h3> Hellsground Cheka & Club la Octava </h3>
                             <p> Palermo, Buenos Aires | 16 de octubre | 23hs a 7hs (UTC-3) </p>
                         </article>
@@ -74,7 +75,7 @@
             <section class="seccion-tienda">
                 <div class="tienda-titulo">
                     <h2>Tienda</h2>
-                    <a href="./pages/tienda.html" target="_blank"><button type="button"> Ver Todos</button></a>
+                    <a href="./pages/tienda.html" target="_blank"><p> Ver Todos</p></a>
                 </div>
 <!-- estos enlaces deberian llevarme a la pagina del buzo directamente, no a la seccion tienda. -->
                 <div class="contenedor-articulotienda">
@@ -114,9 +115,9 @@
             <section class="seccion-sets">
                 <div class="contenedor-titulosets">
                     <h2>Los Ultimos sets</h2>
-                    <a href="./pages/videos.html"><button type="button"> Ver Todos</button></a>
+                    <a href="./pages/videos.html"><p> Ver Todos</p></a>
                 </div>
-                <div class="contenedor-articulos">
+                <div class="contenedor-articulosets">
                     <article>
                         <a href="https://www.youtube.com/watch?v=5w7Lv4rVoLU&t=4432s&ab_channel=FR3ADY" target="_blank"><img src="./img/logo2.JPG" alt="set grabado para youtube" width="270" height="270"></a>
                         <h3> Hellsground Radio edition 01  </h3>
@@ -147,13 +148,13 @@
                     <label for="mail">Ingresa tu mail: </label>
                     <input type="text" id="mail" name="mail">
                     <button type="submit"> SUSCRIBTE </button>
-                    <p><span style="color:black;">Puede cambiar de opinión en cualquier momento haciendo clic en el enlace para cancelar la suscripción
+                    <p><span style="color:grey;">Puede cambiar de opinión en cualquier momento haciendo clic en el enlace para cancelar la suscripción
                     en el pie de página de cualquier correo electrónico que reciba de nosotros, o comunicándose con nosotros en <a href="gmail.com" target="_blank">support@hellsground.tv</a>.
                     Trataremos su información con respeto. Para obtener más información sobre nuestras prácticas de privacidad, lea la <a href="./pages/" target="_blank"> Política de privacidad</a> de HellsGround.
                     Al hacer clic arriba, acepta que podemos procesar su información de acuerdo con estos términos.</span></p>
                 </form>
             </div>
-            
+            <hr>
             <section class="contenedor-enlaces">
                 <article>
                     <a href="./index.html" class="color"><h3>HellsGround</h3></a>
@@ -174,7 +175,6 @@
                         <a href=""><li>Terminos y condiciones de Compra</li></a>
                         <a href=""><li>Politicas de Privacidad</li></a>
                         <a href=""><li>Condiciones de uso del sitio web</li></a>
-                        <a href=""><li>Youtube</li></a>
                     </ul>
                 </article>
             </section>
