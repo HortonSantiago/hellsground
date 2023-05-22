@@ -1,139 +1,343 @@
-/* @media(min-width: 375px){ 
+*{
+    margin: 0% auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        background-color: black;
+        width: 100vw;
+        
+    }
+
     .header{
-        height: 100px;
-        width: 1000px;
-        background-color: black;
-    }
-    .nav{
-        display: flex;
-        
-
-    }
-    .header-logo{
-        width: 50px;
-        height: 50px;
-        border: 1px solid white;
-        border-radius: 50px;
-        margin: 5px;
-        padding: 5px;
-    }
-    .header-listaenlaces{
-        height: 35px;
-        width: 260px;
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 15px;
-
-        position: relative;
-        top: 30px;
-        right: 40px;
-    }
-    .header-enlaces{
-        color: white;
-        border: 1px solid white;
-        margin: 1px;
-        padding: 2px;
-        align-content: center;
-
-    }
-    .header-busqueda{
-        display: none;
-        /* width: 50px ; 
-        height: auto;
-        color: white;
-        gap: 10px;
-
-        margin: 10px;
-        padding: 20px;
-
-        display: flex;
-        flex-flow: column nowrap;
-
-        position: relative;
-        right: 70px;
-         top: 15px; 
-    }
-    nav form label{
-        display: none;
-    }
-
-    .header-contenedor{
-        
-        
-    }
-    .header-contenedorcuenta{
-        color: transparent;
-        
-        position: relative;
-        top: 30px;
-        right: 50px;
-        
-        
-    }
-    .header-cuentaenlace{
-        color: white;
-        text-align: center;
-        margin: 1px;
-        border: 1px solid white;
-        padding: 2px;
-    
-    }
-/* SECCION PRINCIPAL CON 
-    .contenedor-video{
         width: 100%;
-        display: flex;
-        
     }
 
-    .video{
-        width: 100%;
-        
-    }
-    .contenedor-articulo{
-        position: relative;
-        top: 60px;
-        right: 30px;
-        
-    }
-    .articulo{
-        color: white;
+        .nav{
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+        }
+            .h1{
+                width: 15%;
+            }
+                .h1 img{
+                max-width: 100%;
+                }
+
+            .lista{
+                font-size: 12px;
+                margin-right: 1%;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                gap: 2%;
+            }
+                .lista li{
+                    
+                    padding: 1%;
+                    color: transparent;
+                    
+                }
+                .lista a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 100%;
+                }
+                .lista form{
+                    display: none;
+                }
+
+    .main{
         background-color: black;
-        border: 1px solid white;
-
-        width: 180px;
-        height: 100px;
-
-        display: flex;
-        text-align: start;
-        flex-flow: column nowrap;
-        position: relative;
-        right: 370px;
-        top: 50px;
+        height: 1420px;
     }
+        .contenedor-videoprincipal{
+            height: 120vw;
+            width: 100%;
+            
+            
+            position: relative;
+            
 
-    .articulo-h2{
-        text-align: center;
-        position: relative;
-        bottom: 18px;
+        }
+            .contenedor-videoprincipal video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                
+                
+            }
+                .articuloprincipal{
+                    
+                    height: 110px;
+                    width: 200px;
+                    
 
+                    font-size: 9px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+
+                    position: absolute;
+                    right: 45%;
+                    top: 70%;
+                    
+                }
+                .articuloprincipal p{
+                    padding-bottom: 20px;
+                    text-align: center;
+
+                }
+                .articuloprincipal div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 35px;
+                }
+
+                
+                .articuloprincipal a{
+                    width: 100px;
+                    height: 20px;
+                    font: 12px arial;
+                    text-decoration: none;
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    background-color: white;
+                    border: 1px solid white;   
+                }
+        .seccion-eventos{
+            width: 100%;
+}
+            .eventos-titulo{
+                        padding: 3%;
+                        color: white;
+                        
+
+                        display: flex;
+                        align-items: center;
+                        align-content: flex-start;
+            }
+                .eventos-titulo a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: white;
+                }
+                .eventos-titulo p{
+                    border: 1px solid white;
+
+                }
+                .eventos-titulo h2{
+                    font-size: 18px;
+                }
+                .seccion-articulos{
+                    padding : 1%;
+                    margin: 2%;
+                        
+                    gap: 2%;
+                    display: flex;
+                    justify-content: space-between;
+}
+                    .seccion-articulos article{
+                        text-align: start;
+                        color: black;
+                        background-color: white;
+                        
+                        
+                    
+                    }
+                    .seccion-articulos article span{
+                        color: red;
+                        background-color: rgb(214, 206, 206);
+                    }
+                        .seccion-articulos img{
+                            width: 180px;
+                            height: 180px;
+                        }
+                        .seccion-articulos h3{
+                            font-size: 16px;
+                        }
+                        .seccion-articulos p{
+                            font-size: 10px;
+                        }
+
+        .seccion-tienda{
+            width: 100%;
+}
+            .tienda-titulo{
+                padding: 3%;
+                color: white;
+                        
+
+                display: flex;
+                align-items: center;
+                
+
+            }
+                .tienda-titulo h2{
+                    font-size: 18px;
+
+                }
+                .tienda-titulo a{
+                    font-size: 12px;
+                    text-decoration: none;
+                    color: white;
+
+                }
+                .tienda-titulo p{
+                    border: 1px solid white;
+                }
+            .contenedor-articulotienda{
+                display: flex;
+                padding: 2%;
+                margin: 1%;
+                gap: 2%;
+            }
+            .contenedor-articulotienda img{
+                width: 180px ;
+                height: 180px;
+            }
+            .contenedor-articulotienda a{
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+            }
+
+        .seccion-sets{
+            width: 100%;
+        }
+            .contenedor-titulosets{
+                padding: 3%;
+                color: white;
+                        
+
+                display: flex;
+                align-items: center;
+            }
+            .contenedor-titulosets h2{
+                font-size: 18px;
+            }
+            .contenedor-titulosets a{
+                font-size: 12px;
+                text-decoration: none;
+                color: white;
+                
+            }
+            .contenedor-titulosets p{
+                color: white;
+                border: 1px solid white;
+                
+            }
+            .contenedor-articulosets{
+               display: flex;
+
+
+                padding: 2%;
+                margin: 1%;
+                gap: 2%;
+                
+            }
+            .contenedor-articulosets img{
+                width: 180px;
+                height: 180px;
+            }
+            .contenedor-articulosets article{
+                color: white;
+                text-align: center;
+
+                font-size: 10px;
+            }
+
+    .footer{
+        background-color: rgb(26, 22, 22);
+        padding: 5%;
     }
-    .articulo-p{
-        text-align: center;
-        position: relative;
-        bottom: 50px;
+        .contenedor-titulo{
+            margin: 2%;
+            padding: 5%;
 
-    }
-    .articulo-boton{
-        text-align: center;
-        position: relative;
-        bottom: 60px;
+            color: white;
+            text-align: center;
 
-    }
+        }
+        .contenedor-titulo h2{
+            font-size: 18px;
+        }
+        .contenedor-titulo form {
+            padding: 10%;
+            gap: 5%;
+            color: white;
+        }
+       
+        .contenedor-titulo p{
+            padding: 10%;
+        }
+        .contenedor-enlaces{
+            padding: 2%;
+            gap: 15%;
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+        }
+        .contenedor-enlaces a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+        .contenedor-enlaces article{
+            color: white;
+            margin: 3%;
+            padding: 2%;
+            
+        }
+        .contenedor-enlaces li{
+            list-style-type: none;
+            padding: 5%;
+            
+        }
+        
 
- }  
+                        
+                        
 
-/*  */
 
+
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 @media(min-width: 375px){
     .html{
         background-color: black;
@@ -141,6 +345,7 @@
     .header{  
         width: 100vw;
 
+        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -191,8 +396,10 @@
     .lista li{
         margin-right: 5px;
         width: 80px;
-        
-        
+
+    }
+    .lista li a{
+        text-decoration: none;
 
     }
 
@@ -213,7 +420,7 @@
     .lista-formulario button{
         display: none;
     }
-/* EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN   */
+ EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  EMPIEZO CON EL MAIN  
 
     .main{
         width: 100vw;
@@ -226,8 +433,8 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* Alinear el contenido al final del contenedor */
-        align-items: flex-start; /* Alinear el contenido a la izquierda del contenedor */
+        justify-content: flex-end; /* Alinear el contenido al final del contenedor 
+        align-items: flex-start; /* Alinear el contenido a la izquierda del contenedor 
         
         position: relative;
         
@@ -259,6 +466,10 @@
         align-items: center;
        
         }
+    .articuloprincipal button{
+        margin-top: 1%;
+    }
+
 
 
     .seccion-eventos{
@@ -309,7 +520,7 @@
         
     }
 
-/*                      SECCION TIENDA */
+/*                      SECCION TIENDA 
 
     .seccion-tienda{
         max-width: 100%;
@@ -340,7 +551,7 @@
         color: white;
 
     }
-   /*                  SECCION SETS */
+   /*                  SECCION SETS 
     .seccion-sets{  
         max-width: 100%;
 
@@ -375,7 +586,7 @@
     }
 
 
-    /*                  FOOOTER */
+    /*                  FOOOTER 
     .footer{
         background-color: grey;
     }
@@ -405,8 +616,7 @@
 
     }
    
-    
+*/
 
 
 
-}
