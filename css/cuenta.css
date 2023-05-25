@@ -1,85 +1,338 @@
-*{
-    margin: 0% auto;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-.body{
+@media only screen and (min-width: 375px)  and (max-width: 400px){
+  body{
+    background-color: black;
     width: 100vw;
+    font-size: 10px;
     
-
 }
-
-.header {
-    max-width: 100%;
-    min-height: 10%;
-
-    
-  }
-  
-  .header-contenedor {
-    display: grid;
-    grid-template-columns: auto 1fr; /* El primer elemento se ajustará automáticamente al contenido, el segundo ocupará el espacio restante */
-    align-items: center; /* Centrar verticalmente el contenido */
-    background-color: black; /* Solo para visualizar el área ocupada por el header */
-}
-  
-  .h1 {
-    display: flex;
-    padding: 1%;
-  }
-  
-  ul {
-    list-style: none;
-    margin-right: 10px;
-    
-    display: flex;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-  }
-  
-  ul li {
-    margin-left: 10px; /* Espacio entre los elementos del menú */
-  }
-  
-  .formulario {
-    display: flex;
-    align-items: center;
-  }
-  .formulario input{
-    display: none;
-  }
-  .formulario label{
-    color: white;
-    font-weight: bold;
-  }
-  .formulario button{
-    display: none;
-  }
-  
-  /* Estilos adicionales para visualización */
-  ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-  }
-  
- 
-  button {
-    margin-left: 5px;
-  }
-  img{
+.header{
     width: 100%;
-  }
-
-
-  /* 
-                                DISEÑOOOOOOO DEL BODY*/
-  .main{
-    margin: 10px;
-    padding: 100px;
-
-    display: flex;
-    flex-flow: column;
-    background-image: url(../img/foto1.JPG);
     
+}
+
+    .nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav ul{
+      font-size: 10px;
+      margin-right: 10%;
+    }
+        .h1{
+            width: 15%;
+        }
+            .h1 img{
+            max-width: 100%;
+            }
+        .lista{
+            width: 90%;
+            font-size: 10px;
+            
+
+            display: flex;
+        }
+            .lista li{
+                
+                padding: 1%;
+                color: transparent;
+                
+            }
+            .lista a{
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .lista form{
+                display: none;
+            }
+
+      .main{
+        background-image: url(../img/nombre3.JPG);
+        background-position:top;
+        background-repeat: no-repeat;
+        background-size:contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+        .main-contenedor{
+          color: white;
+          text-align: center;
+
+        }
+          .articulo{
+            font-size: 22px;
+            
+
+          } 
+            .main-contenedor ul{
+              text-align: justify;
+              gap: 10px;
+              
+
+
+            }
+            li{
+              list-style: none;
+              color: white;
+              margin-bottom: 5px;
+              
+            }
+            .form1{
+              display: none;
+            }
+            .form-email{
+              padding: 5%;
+              width: 50%;
+              font-size: 18px;
+              border: 1px solid white;
+              text-align: justify;
+              
+
+
+            }
+            .contenedor-form{
+              
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              
+              gap: 50px;
+              margin-bottom: 10px;
+              
+            }
+            .contenedor-form input,
+            .contenedor-form label,
+            .contenedor-form span {
+              margin-bottom: 10px; 
+            }
+
+    .footer{
+              margin-top: 5%;
+              background-color: rgb(26, 22, 22);
+              padding: 4%;
+          }
+              .contenedor-titulo{
+                  margin: 2%;
+                  padding: 5%;
+      
+                  color: white;
+                  text-align: justify;
+      
+              }
+              .contenedor-titulo h2{
+                  font-size: 18px;
+              }
+              .contenedor-titulo form {
+                  padding: 5%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  
+                  color: white;
+              }     
+              .contenedor-titulo label{
+                  font-size: 20px;
+                  padding: 10%;
+              }
+              .contenedor-titulo p{
+                  font-size: medium;
+              }
+              .contenedor-enlaces{
+                  margin: 2%;
+                  padding: 5%;
+                  gap: 10%;
+                  display: flex;
+                  
+                  text-align: start;
+              }
+              .contenedor-enlaces h3{
+                  font-size: 15px;
+              }
+              .contenedor-enlaces a{
+                  text-decoration: none;
+                  font-size: 15px;
+                  color: white;
+              }
+              .contenedor-enlaces article{
+                  color: white;
+                  margin: 3%;
+                  padding: 2%;
+                  
+              }
+              .contenedor-enlaces li{
+                  list-style-type: none;
+                  padding: 5%;
+                  
+              }       
+              
+              
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1024px) {
+  body{
+    background-color: black;
+    width: 100vw;
+}
+    .header{
+        width: 100%;
+    }
+        .nav{
+            display: flex;
+            align-items: center;
+        }
+            .h1{
+                width: 7%;
+            }
+                .h1 img{
+                    max-width: 100%;
+                }
+            .lista{
+                font-size: 24px;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+                gap: 15%;
+                margin-left: 1%;
+                padding-right: 10%;
+            
+                
+                list-style-type: none;
+            }
+            .lista li{
+                flex: 1;
+                width: 10px ;
+            }
+            .lista a{
+                width: 30px;
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            
+            }
+            .lista input{
+                display: none;
+            }
+            .lista button{
+                display: none;
+            }
+
+
+          .main-contenedor{
+            height: 140vw;
+            background-image: url(../img/IMG-7210-Original.png);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:contain;
+           
+            
+            align-items: center;
+          }
+
+          .articulo{
+            height: 50%;
+            font-size: 34px;
+            color: white;
+            text-align: center;
+            height: 50%;
+          }
+          .form1{
+            display: none;
+          }
+          .contenedor-form{
+            display: flex;
+            justify-content: center;
+            
+            height: 50%;
+          }
+          .contenedor-form input,
+          .contenedor-form label,
+          .contenedor-form span {
+            margin-bottom: 10px;
+}
+          .form-email{
+            padding: 1%;
+            font-size: 50px;
+            color: white;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            
+            width: 300px;
+          }
+          .articulo ul{
+            list-style: none;
+            text-align: center;
+          }
+
+          span{
+            font-size: 24px;
+          }
+
+
+
+
+            .footer{
+              background-color: rgb(26, 22, 22);
+              padding: 5%;
+}
+  .contenedor-titulo{
+                  margin: 2%;
+                  padding: 5%;
+      
+                  color: white;
+                  text-align: center;
   }
+      .contenedor-titulo h2{
+                  font-size: 36px;
+      }
+      .contenedor-titulo form {
+                  
+          
+          font-size: 26px;
+          padding: 5%;
+          gap: 1%;
+          color: white;
+      }     
+      .contenedor-titulo label{
+          font-size: 30px;
+      }
+      .contenedor-titulo input{
+          font-size: 25px;
+          
+      }
+      .contenedor-titulo button{
+          font-size: 25px;
+      }
+      .contenedor-titulo p{
+              text-align: justify;
+              padding: 2%;
+              font-size: 20px ;
+      }
+  .contenedor-enlaces{
+                  padding: 5%;
+                  
+                  display: flex;
+                  justify-content: space-between;
+                  text-align: justify;
+  }
+      .contenedor-enlaces a{
+                  text-decoration: none;
+                  font-size: 24px;
+                  color: white;
+      }
+      .contenedor-enlaces h3{
+          font-size: 32px;
+      }
+      .contenedor-enlaces article{
+                  color: white;
+                  margin: 3%;
+                  padding: 2%;
+      }
+      .contenedor-enlaces li{
+                  list-style-type: none;
+                  padding: 3%;
+      }       
+}

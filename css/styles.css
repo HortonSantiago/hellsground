@@ -64,27 +64,30 @@
                 
                 
             }
-            .articuloprincipal{                    
-                    height: 18%;
+            .articuloprincipal{
+                    
+                    height: 17%;
                     width: 50%;
                     
+
                     font-size: 9px;
                     font-family: Arial, Helvetica, sans-serif;
                     background-color: black;
                     color: white;
                     
-                    border: 1px solid white;
-
                     position: absolute;
                     right: 45%;
-                    top: 70%;             
+                    top: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    
             }
                 .articuloprincipal p{
                     
                     text-align: center;
                     font: 14px arial;
 
-                    padding: 3%;
+                    padding: 2%;
 
                 }
                 .articuloprincipal h2{
@@ -137,6 +140,7 @@
                 }
                 .seccion-articulos{
                     height: 100%;
+                    width: 100%;
                     padding : 1%;
                     margin: 0;
                         
@@ -386,7 +390,7 @@
             
             }
             .articuloprincipal{
-            height: 15%;
+            height: 35%;
             width: 25%;   
             
                 
@@ -399,7 +403,7 @@
 
             position: absolute;
             left: 5%;
-            bottom: 10%;
+            bottom: 1%;
                 
             }
                 .articuloprincipal h2{
@@ -551,6 +555,7 @@
             .contenedor-articulosets{
                        display: flex;
         
+        
                         padding: 2%;
                         margin: 0;
                         gap: 2%;
@@ -561,7 +566,7 @@
                 }
                 .contenedor-articulosets article{
                         color: white;
-                        text-align: justify;
+                        text-align: center;
         
                         font-size: 20px;
                 }
@@ -619,9 +624,8 @@
             }
             .contenedor-enlaces article{
                         color: white;
-                        margin: 0;
-                        padding: 0;
-                        
+                        margin: 3%;
+                        padding: 2%;
             }
             .contenedor-enlaces li{
                         list-style-type: none;
